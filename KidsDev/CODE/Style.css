@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: Arial,sans-serif;
+  background-color: black
+}
+
+h1{
+    text-align: center;
+    text-decoration: underline;
+    color: bisque;
+    text-transform: uppercase
+}
+
+p,i{
+    font-size: 29px;
+    margin-left: 15px;
+    color: bisque;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    text-align: center
+}
+
+ul li{
+    font-size: 23px;
+    font-weight: bold;
+    color: bisque;
+    font-style: italic;
+    text-align: center;
+    list-style-type: none;
+}
+hr{
+    color: bisque;
+}
+span{
+    color: blueviolet
+}
+
+.image{
+     display: block;
+     margin-left: auto;
+     margin-right: auto;
+     width: 500px;
+     height: 500px;
+     border-radius: 20px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
