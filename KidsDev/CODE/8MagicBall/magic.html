@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="magic.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+     <div class="ball" id="ball">
+        <span></span>
+        <div class="answer">
+            <h1 id="8">8</h1>
+            <p id="answer"></p>
+        </div>
+     </div>
+    </div>
+
+
+    <script type="text/javascript">
+        
+        var answers = ["ta3 wadjhk", 
+                       "peut etre , peut etre pas", 
+                       "rayh ttkhayl", 
+                       "OUI in french accent",
+                       "Jamais de la vieeee", 
+                       "W ana wsh dkhklni", 
+                       "BIEN SUR MA CHERIE !!!", 
+                       "Allahou a3lm", 
+                       "Roh tkhra",
+                       "Danya a7la with HAMOUD", 
+                       "ntadjk tzawdjo ...",
+                       "Oui ", 
+                       "Rabi m3ak ",
+                       "ana w maarftch wsh ndjawbk", 
+                       "lol", 
+                       "Sa9sini mor ma nod", 
+                       "OK",
+                       "Kather d3awi", 
+                       "mn naytk ?"];
+        
+        window.onload = function() {
+           var eight = document.getElementById("8");
+           var answer = document.getElementById("answer");
+           var ball = document.getElementById("ball");
+
+           ball.addEventListener("click", function() {
+
+               eight.innerText = "";
+               var num = Math.floor(Math.random() * Math.floor(answers.length));
+               answer.innerText = answers[num];
+             
+           });
+        };
+
+      </script>
+</body>
+</html>
